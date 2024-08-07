@@ -1,0 +1,68 @@
+Task: Build a Real-Time Stock Trading Platform
+Requirements:
+1. Backend (Node.js + Express + WebSocket):
+* Set up an Express server.
+* Integrate a database (e.g., MongoDB or PostgreSQL) to store user data, stock data, and transaction history.
+* Implement RESTful API endpoints:
+    * POST /api/register - Register a new user.
+    * POST /api/login - User login.
+    * GET /api/stocks - Retrieve current stock data.
+    * POST /api/stocks/buy - Buy a stock.
+    * POST /api/stocks/sell - Sell a stock.
+    * GET /api/transactions - Retrieve user's transaction history.
+* Set up WebSocket (using Socket.io) for real-time stock price updates.
+* Implement real-time notifications for stock price changes and user transactions.
+2. Frontend (React):
+* Create a React application using create-react-app.
+* Set up React Router for navigating between pages (e.g., Login, Dashboard, Stock Details).
+* Create components for user registration, login, dashboard, stock list, stock details, and transaction history.
+* Use Axios for making HTTP requests to the backend API.
+* Implement WebSocket client (using Socket.io-client) to handle real-time stock price updates.
+* Implement real-time notifications for price changes and transactions.
+* Implement user authentication and authorization using JWT.
+Detailed Steps:
+Backend:
+1. Setup Express Server:
+    * Initialize a Node.js project with Express.
+    * Install necessary dependencies: express, mongoose or pg, socket.io, bcrypt, jsonwebtoken, cors.
+2. Database Integration:
+    * Set up MongoDB or PostgreSQL and define schemas for users, stocks, and transactions.
+    * Create models for storing user data, stock data, and transaction history.
+3. API Endpoints:
+    * Implement user authentication endpoints (register, login).
+    * Implement stock trading endpoints (stocks, buy, sell).
+    * Implement transaction history endpoint (transactions).
+4. WebSocket Integration:
+    * Set up Socket.io on the server to handle real-time connections.
+    * Handle events for real-time stock price updates and notifications.
+5. Stock Price Data:
+    * Integrate a third-party API to fetch real-time stock prices (e.g., Alpha Vantage, IEX Cloud).
+    * Implement a service to fetch and broadcast stock prices periodically.
+Frontend:
+1. Setup React Application:
+    * Initialize a React project using create-react-app.
+    * Install necessary dependencies: axios, react-router-dom, socket.io-client.
+2. Routing:
+    * Set up routes for Login, Dashboard, Stock Details, and Transaction History pages using React Router.
+3. Components:
+    * Login Component:
+        * Implement user login functionality.
+    * Register Component:
+        * Implement user registration functionality.
+    * Dashboard Component:
+        * Display a list of available stocks and their current prices.
+        * Allow users to buy or sell stocks.
+    * Stock Details Component:
+        * Display detailed information about a specific stock.
+        * Show real-time price updates and trading options.
+    * Transaction History Component:
+        * Display the user's transaction history.
+4. State Management:
+    * Manage application state using Context API or Redux.
+    * Handle user authentication state, stock data, and transaction history.
+5. Real-Time Features:
+    * Ensure real-time stock price updates using WebSocket.
+    * Implement real-time notifications for stock price changes and user transactions.
+
+
+    Alpha Vantage: TK9AV602GVZHI5Q2
